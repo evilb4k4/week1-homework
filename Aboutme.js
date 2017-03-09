@@ -55,16 +55,16 @@ for (var x = 1; x < 4; x++) {
     alert('Too high');
   }
 }
+var newArray = ['England','Mexico','Germany','Korea', 'Turkey', 'Russia'];
 
 for (var i = 0; i < newArray.length; i++){
  var answer = prompt('Can you guess what country I\'ve travel to while in the military?');
- var newArray = ['England','Mexico','Germany','Korea', 'Turkey', 'Russia'];
  console.log('it works');
- var modifiedAns = answer[0].toUpperCase() +answer.slice(1, answer.lenght-1).toLowerCase();
-   if (modifiedAns() === newArray[i]) {
+ var modifiedAns = answer[0].toUpperCase() +answer.slice(1, answer.length).toLowerCase();
+   if (modifiedAns === newArray[i]) {
       alert('Correct !');
       break;
-   } else  {
-      alert('Nope');
+   } else {
+      alert('Hint: One of the countries is connected to the USA');
    }
  }
