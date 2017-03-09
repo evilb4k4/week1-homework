@@ -56,3 +56,12 @@
 //   }
 // }
 //
+var answer = prompt('Can you guess what country other than USA I\'ve live in?');
+var newArray = ['England','Mexico','Germany','Korea',];
+for (var i = 0; i < newArray.length; i++){
+  if (answer.toLowerCase() === newArray[i]) {
+     alert('correct!');
+  } else  {
+     alert('Nope');
+  }
+}
